@@ -43,19 +43,6 @@
         </tbody>
       </table>
 
-      <!-- <div
-        v-for="todo in allTodos"
-        v-bind:key="todo.id"
-        v-bind:class="{'isCompleted' : todo.completed}"
-      >-->
-      <!-- <input type="checkbox" v-on:change="updateTodo(todo.id)"  v-bind:checked="{'checked' : todo.completed}"/> -->
-      <!-- <div class="todoContainer">
-          <div class="todoitem">{{todo.name}}</div>
-          <div>
-            <button v-on:click="updateTodo(todo.id)">Update</button>
-          </div>
-      </div>-->
-      <!-- </div> -->
     </div>
 
     <!--Edit Todo Modal/Dialog-->
@@ -83,23 +70,6 @@
               v-bind:value="selectedTodo.name"
               v-bind:maxLength="max"
             />
-
-            <!-- <div class="container">
-              <div class="row">
-                <div class="col-8">
-                  <input
-                    id="editForm"
-                    class="form-control"
-                    type="text"
-                    v-bind:value="selectedTodo.name"
-                    v-bind:maxLength="max"
-                  />
-                </div>
-                <div class="col">
-                  <div class="maxInfo">0/40</div>
-                </div>
-              </div>
-            </div>-->
           </div>
 
           <div class="modal-footer">
@@ -155,17 +125,6 @@ export default {
 </script>
 
 <style scoped>
-/* .todoContainer {
-  display: flex;
-} */
-
-/* .todoitem {
-  border: 1px solid #ccc;
-  background: #41b883;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
-} */
 
 .isCompleted {
   text-decoration: line-through;
